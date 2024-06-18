@@ -102,22 +102,22 @@
     <!-- Minio properties -->
     <property>
         <name>fs.s3a.connection.ssl.enabled</name>
-        <value>true</value>
+        <value>false</value>
     </property>
 
     <property>
         <name>fs.s3a.endpoint</name>
-        <value>https://play.min.io</value>
+        <value>http://minio:9000</value>
     </property>
 
     <property>
         <name>fs.s3a.access.key</name>
-        <value>minio</value>
+        <value></value>
     </property>
 
     <property>
         <name>fs.s3a.secret.key</name>
-        <value>minio123</value>
+        <value></value>
     </property>
 
     <property>
@@ -130,4 +130,23 @@
         <value>org.apache.hadoop.fs.s3a.S3AFileSystem</value>
     </property>
 
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.cj.jdbc.Driver</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value></value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value></value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value></value>
+    </property>
 </configuration>
